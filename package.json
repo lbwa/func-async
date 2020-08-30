@@ -1,11 +1,26 @@
 {
   "name": "func-async",
+  "description": "Functional async function",
   "author": "Bowen Liu <asyncmode@outlook.com>",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/func-async.esm.js",
   "typings": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/lbwa/func-async.git"
+  },
+  "keywords": [
+    "functional"
+  ],
+  "bugs": {
+    "url": "https://github.com/lbwa/func-async/issues"
+  },
+  "homepage": "https://github.com/lbwa/func-async#readme",
   "files": [
     "dist",
     "src"
@@ -30,12 +45,12 @@
     "prettier": "^2.1.1",
     "tsdx": "^0.13.3",
     "tslib": "^2.0.1",
-    "typescript": "^4.0.2"
+    "typescript": "^3.9.7"
   },
   "peerDependencies": {},
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": "lint-staged"
     }
   },
   "prettier": {
@@ -49,7 +64,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
+      "prettier --write",
+      "tsdx lint"
     ]
   }
 }

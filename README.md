@@ -1,6 +1,6 @@
 <h1 align="center">Functional async function</h1>
 
-A [golang like](https://golang.org/doc/effective_go.html#multiple-returns) function helper for avoiding async function `try...catch` mental model.
+A [golang function like](https://golang.org/doc/effective_go.html#multiple-returns) helper for avoiding async function `try...catch` mental model.
 
 ## Installation
 
